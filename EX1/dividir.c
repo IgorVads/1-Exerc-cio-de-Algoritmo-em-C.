@@ -2,22 +2,30 @@
 #include <math.h>
 #include <locale.h>
 
+/*Um algoritmo para calcular a divis√£o de um n√∫mero por outro. O algoritmo s√≥ 
+deve realizar a divis√£o se o divisor for diferente de zero. Caso contr√°rio, o algoritmo 
+deve informar que o resultado √© indeterminado*/
+
 int main(int argc, char** argv)
 {
 setlocale(LC_ALL, "portuguese");
+	
 	float n1, n2, result; 
+	
 	printf("Digite o dividendo: ");
 		scanf("%f", &n1);
+	
 	printf("Digite o divisor: ");
 		scanf("%f", &n2);
+	
     result = n1 / n2;
-    if (n2 != 0 ) // O if n„o deixa que se faÁa conta com o divisor = 0
+    if (n2 != 0 ) // O if n√£o deixa que se fa√ßa conta com o divisor = 0
 	{
-	printf("\nO resultado da sua divis„o È: %.0f", result);	
+	printf("\nO resultado da sua divis√£o √©: %.0f", result);	
 	}
 	else
 	{
-	printf("\n***** N„o È possivel fazer essa divis„o! *****");	
+	printf("\n***** N√£o √© possivel fazer essa divis√£o! *****");	
 	}
 return (0);	
 }
